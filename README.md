@@ -34,7 +34,7 @@ methods available on objects such as Strings.
 The bracket method works the same way when using symbols:
 
 ```ruby
-meals = {breakfast: "cereal", lunch: "peanut butter and jelly sandwich", dinner: "mushroom risotto"}
+meals = {:breakfast => "cereal", :lunch => "peanut butter and jelly sandwich", :dinner => "mushroom risotto"}
 #=> {:breakfast=>"cereal", :lunch=>"peanut butter and jelly sandwich", :dinner=>"mushroom risotto"}
 
 meals[:breakfast]
@@ -59,7 +59,7 @@ We can also use variables inside the brackets:
 key = :name
 #=> :name
 
-user_info = {name: "Ada", email: "ada.lovelace@famous_computer_inventors.com"}
+user_info = {:name => "Ada", :email => "ada.lovelace@famous_computer_inventors.com"}
 #=> {:name=>"Ada", :email=>"ada.lovelace@famous_computer_inventors.com"}
 
 user_info[key]
@@ -72,7 +72,7 @@ If we use the bracket method and pass in a value that does not match a key on
 the hash, Ruby will return `nil`:
 
 ```ruby
-grocery_items = {apples: 10, pears: 4, peaches: 2, plums: 13}
+grocery_items = {:apples => 10, :pears => 4, :peaches => 2, :plums => 13}
 #=> {:apples=>10, :pears=>4, :peaches=>2, :plums=>13}
 
 grocery_items[:rambutans]
@@ -85,7 +85,7 @@ behavior allows us to easily check if a hash has a key/value pair or not as we
 can use the bracket method in a conditional statement:
 
 ```ruby
-grocery_items = {apples: 10, pears: 4, peaches: 2, plums: 13}
+grocery_items = {:apples => 10, :pears => 4, :peaches => 2, :plums => 13}
 #=> {:apples=>10, :pears=>4, :peaches=>2, :plums=>13}
 
 if grocery_items[:rambutan]
