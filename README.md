@@ -2,7 +2,8 @@
 
 ## Learning Goals
 
-- Retrieve data from hashes using its keys and the "bracket" method
+- Retrieve data from hashes
+- Handle a `nil` response when no key is found
 
 ## Introduction
 
@@ -66,7 +67,7 @@ user_info[key]
 #=> "Ada"
 ```
 
-## Receiving `nil` When No Key is Found
+## Handle a `nil` Response When No Key Is Found
 
 If we use the bracket method and pass in a value that does not match a key on
 the hash, Ruby will return `nil`:
