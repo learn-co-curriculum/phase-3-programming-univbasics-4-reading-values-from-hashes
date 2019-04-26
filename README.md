@@ -18,7 +18,6 @@ instead of giving an array the index number in brackets `[i]` we give a hash the
 name of the key `[key]`. The Hash will return the value associated with the
 _key_.
 
-
 ```ruby
 pets = {"cat" => "Maru", "dog" => "Pluto"}
 #=> {"cat"=>"Maru", "dog"=>"Pluto"}
@@ -27,7 +26,7 @@ pets["cat"]
 #=> "Maru"
 ```
 
-Using `[]` is referred to as **"bracket notation".** 
+Using `[]` is referred to as **"bracket notation".**
 
 Keep in mind, _keys_ can be `Symbol`s instead of `String`s. The `Hash` lookup works
 just the same:
@@ -68,7 +67,7 @@ user_info[key]
 ## Handle a `nil` Response When No Key Is Found
 
 If we use the bracket notation and pass in a value that does not match a key on
-the hash, Ruby will return `nil`:
+the hash, Ruby will return `nil` by default:
 
 ```ruby
 grocery_items = {:apples => 10, :pears => 4, :peaches => 2, :plums => 13}
@@ -99,7 +98,7 @@ end
 > can find a method that will look up a _key_ and will let you specify
 > what to return if the _key_ is not found! The default data types of
 > Ruby have POWERFUL magic inside of them that's yours to discover. As a hint
-> it's a method that a dog my know to respond to :)
+> it's a method that a dog ight know to respond to :)
 
 ## Conclusion
 
