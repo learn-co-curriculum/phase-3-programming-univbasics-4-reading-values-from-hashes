@@ -7,18 +7,17 @@
 
 ## Introduction
 
-Okay, with the basics of hash creation covered, we can now talk about accessing
-data from a hash.
-
 In this lesson, we're going to look at how we get values from a hash using
-its keys.
+its keys. If an array is a **list** in which we access index items by
+their number, a hash is a **dictionary** in which we access values by their key.
 
 ## Retrieving Data from Hashes
 
 Retrieving data from a hash is similar to retrieving data from an array, but
 instead of giving an array the index number in brackets `[i]` we give a hash the
-name of the key `[key]`. If an array is a **list** in which we access index items by
-their number, a hash is a **dictionary** in which we access values by their key.
+name of the key `[key]`. The Hash will return the value associated with the
+_key_.
+
 
 ```ruby
 pets = {"cat" => "Maru", "dog" => "Pluto"}
@@ -28,11 +27,10 @@ pets["cat"]
 #=> "Maru"
 ```
 
-Using `[]` is referred to as the **"bracket method".** It is actually a method
-just like any other––just like the methods you've been defining and like the
-methods available on objects such as Strings.
+Using `[]` is referred to as **"bracket notation".** 
 
-The bracket method works the same way when using symbols:
+Keep in mind, _keys_ can be `Symbol`s instead of `String`s. The `Hash` lookup works
+just the same:
 
 ```ruby
 meals = {:breakfast => "cereal", :lunch => "peanut butter and jelly sandwich", :dinner => "mushroom risotto"}
@@ -42,7 +40,7 @@ meals[:breakfast]
 #=> "cereal"
 ```
 
-It will also work if we use integers for keys. However, it is important to
+It will _also_ work if we use `Integer`s for keys. It is important to
 remember that when using the bracket method on a hash, Ruby is not looking for
 the index like it would in an array. Instead, Ruby is looking for the key that
 matches whatever is inside the brackets and returns the associated value:
@@ -69,7 +67,7 @@ user_info[key]
 
 ## Handle a `nil` Response When No Key Is Found
 
-If we use the bracket method and pass in a value that does not match a key on
+If we use the bracket notation and pass in a value that does not match a key on
 the hash, Ruby will return `nil`:
 
 ```ruby
@@ -96,6 +94,12 @@ else
 end
 # No rambutan.
 ```
+
+> **STRETCH**: Look at the documentation for the `Hash` class. See if you
+> can find a method that will look up a _key_ and will let you specify
+> what to return if the _key_ is not found! The default data types of
+> Ruby have POWERFUL magic inside of them that's yours to discover. As a hint
+> it's a method that a dog my know to respond to :)
 
 ## Conclusion
 
