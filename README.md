@@ -98,7 +98,7 @@ end
 > can find a method that will look up a _key_ and will let you specify
 > what to return if the _key_ is not found! The default data types of
 > Ruby have POWERFUL magic inside of them that's yours to discover. As a hint
-> it's a method that a dog ight know to respond to :)
+> it's a method that a dog might know to respond to :)
 
 ## Conclusion
 
